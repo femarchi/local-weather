@@ -1,0 +1,45 @@
+html, body {
+	height: 100%;
+	width: 100%;
+
+}
+
+#page-wrapper {
+	height: 100%;
+	width: 100%;
+	background-color: gray;
+}
+
+	#weather-app *{
+		/*
+		max-width: 500px;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -110px;
+		margin-left: -250px;
+		*/
+		/*border: 2px dashed blue;*/
+	}
+
+
+			#app-title {
+				color:white;
+			}
+
+			#weather-icon {
+				height: 6rem;
+				text-align: right;
+				font-size: 4rem;
+			}
+
+			#location {
+				height: 3rem;
+				text-align: left;
+			}
+			
+			#temperature {
+				height: 3rem;
+				text-align: 
+			}

@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<!-- 
+META TAGS 
+-->
+
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Mobile First -->
+  <meta name="description" content="App to show the local weather">
+  <meta name="keywords" content="local weather freecodecamp fullstack web developer project">
+  <meta name="author" content="Felipe Marchi">
+    
+  <title>
+
+		Local Weather
+
+  </title>
+
+<!-- 
+IMPORTS
+-->
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+	<!-- Bootstrap core CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Weather Icons -->
+  <link rel="stylesheet" href="css/weather-icons-wind.css">
+	<link rel="stylesheet" href="css/weather-icons-wind.min.css">	
+	<link rel="stylesheet" href="css/weather-icons.css">
+	<link rel="stylesheet" href="css/weather-icons.min.css">
+
+  <!-- Fonts -->
+
+
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/11b943fcba.js"></script>
+
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+
+</head>
+
+<body>
+
+<!--
+ CODE
+-->
+
+	<div id="page-wrapper" class="container-fluid">
+		
+		<div id="weather-app" class="row">
+			
+			<div id="app-title" class="col-xs-12 text-center">
+				<h1>Free Code Camp<br>Weather App</h1>	
+			</div>
+			
+			<div id="app-info" class="col-xs-12">
+				<div id="info-wrapper" class="row">
+					<div id="weather-icon" class="col-xs-6">
+						<!-- 
+						Changing weather icon 
+						-->
+						<i class="wi wi-day-sunny"></i>
+					</div>
+
+					<div id="location-info" class="col-xs-6">
+						<div id="location" class="row">
+							<!--
+							Location section
+							-->
+							<p>Location</p>	
+						</div>
+						<div id="temperature" class="row">
+							<!--
+							Temperature section
+							-->
+							<p> <span id="celsius">N</span>&#8451;/<span id="fahrenheit">N</span>&#8457;</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--
+ SCRIPTS
+-->
+    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap JS-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+		
+</body>
+
+</html>
