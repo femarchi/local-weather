@@ -16,7 +16,7 @@ META TAGS
   <meta name="keywords" content="local weather freecodecamp fullstack web developer project">
   <meta name="author" content="Felipe Marchi">
     
-  <title>
+<title>
 
 		Local Weather
 
@@ -39,20 +39,34 @@ IMPORTS
 	<link rel="stylesheet" href="css/weather-icons.css">
 	<link rel="stylesheet" href="css/weather-icons.min.css">
 
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+
   <!-- Fonts -->
 
+<!--
+ SCRIPTS
+-->
 
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/11b943fcba.js"></script>
+	
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+  
+  <!-- Bootstrap JS-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+  <!-- Custom Script -->
+  <script src="js/script.js"></script>
 
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+	<!-- Weather API -->
+	<script src="https://cdn.rawgit.com/monkeecreate/jquery.simpleWeather/master/jquery.simpleWeather.min.js"></script>
+
 
 </head>
 
 <body>
-
 <!--
  CODE
 -->
@@ -71,21 +85,17 @@ IMPORTS
 						<!-- 
 						Changing weather icon 
 						-->
-						<i class="wi wi-day-sunny"></i>
+						<i class="wi wi-na"></i>
 					</div>
 
 					<div id="location-info" class="col-xs-6">
+
 						<div id="location" class="row">
-							<!--
-							Location section
-							-->
-							<p>Location</p>	
+							<p>Could not retrieve location</p>	
 						</div>
+
 						<div id="temperature" class="row">
-							<!--
-							Temperature section
-							-->
-							<p> <span id="celsius">N</span>&#8451;/<span id="fahrenheit">N</span>&#8457;</p>
+						<!-- 	<p><span id="celsius">N</span>&#8451;/<span id="fahrenheit">N</span>&#8457;</p> -->
 						</div>
 					</div>
 
@@ -93,19 +103,6 @@ IMPORTS
 			</div>
 		</div>
 	</div>
-
-<!--
- SCRIPTS
--->
-    
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-    
-    <!-- Bootstrap JS-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  
-    <!-- Custom Script -->
-    <script src="script.js"></script>
 		
 </body>
 
