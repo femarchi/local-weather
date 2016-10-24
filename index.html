@@ -18,7 +18,7 @@ META TAGS
     
 <title>
 
-		Local Weather
+		Local Weather App
 
   </title>
 
@@ -43,7 +43,8 @@ IMPORTS
   <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
 
   <!-- Fonts -->
-
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Signika" rel="stylesheet"> 
+	
 <!--
  SCRIPTS
 -->
@@ -57,11 +58,11 @@ IMPORTS
   <!-- Bootstrap JS-->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <!-- Custom Script -->
-  <script src="js/script.js"></script>
-
 	<!-- Weather API -->
 	<script src="https://cdn.rawgit.com/monkeecreate/jquery.simpleWeather/master/jquery.simpleWeather.min.js"></script>
+
+	  <!-- Custom Script -->
+  <script src="js/script.js"></script>
 
 
 </head>
@@ -71,36 +72,33 @@ IMPORTS
  CODE
 -->
 
-	<div id="page-wrapper" class="container-fluid">
-		
-		<div id="weather-app" class="row">
+	<div id="page-wrapper">
+		<div id="weather-app" class="container">
 			
-			<div id="app-title" class="col-xs-12 text-center">
-				<h1>Free Code Camp<br>Weather App</h1>	
+			<div id="app-title" class="row text-center">
+				<p>Simple Weather App</p>	
 			</div>
-			
-			<div id="app-info" class="col-xs-12">
-				<div id="info-wrapper" class="row">
-					<div id="weather-icon" class="col-xs-6">
-						<!-- 
-						Changing weather icon 
-						-->
-						<i class="wi wi-na"></i>
-					</div>
 
-					<div id="location-info" class="col-xs-6">
+			<div id="weather-info" class="row">
+				<div id="weather-icon" class="col-xs-5">
+					<i class="wi wi-na"></i>
+				</div>
 
-						<div id="location" class="row">
-							<p>Could not retrieve location</p>	
-						</div>
+				<div id="location-info" class="col-xs-7">
 
-						<div id="temperature" class="row">
-						<!-- 	<p><span id="celsius">N</span>&#8451;/<span id="fahrenheit">N</span>&#8457;</p> -->
-						</div>
-					</div>
+					<p id="location">Could not retrieve location</p>
+					<p id="description"></p>
+					<p id="temperature"></p>
 
 				</div>
 			</div>
+			
+			<div id="app-footer" class="row text-center">
+				<p>Designed by <a href="http://femarchi.github.io/en/">Felipe Marchi</a></p>	
+<!-- 				<p>Icons by <a href="#">Weather Icons</a></p>
+				<p>Weather API by <a href="#">Simple Weather</a></p> -->
+			</div>
+
 		</div>
 	</div>
 		

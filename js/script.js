@@ -25,6 +25,7 @@ function loadWeather(lat, long) {
     	$("#weather-icon").html("<i class='wi "
     													+ getWeatherIcon(parseInt(weather.code))
     													+ "'></i>");
+    	$("#description").html("<p>" + weather.text + "</p>");
     	$("#temperature").html("<p>" + weather.temp + "&#8451;/ " + weather.alt.temp + "&#8457;</p>");
 
     },

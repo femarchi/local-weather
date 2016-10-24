@@ -7,23 +7,85 @@ html, body {
 #page-wrapper {
 	height: 100%;
 	width: 100%;
-	background-color: gray;
+	padding: 0;
+
+	background: url("../img/weather-bg-01-md.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-	#weather-app>*>*>*{
-		/*border: 2px dashed white;*/
+	#weather-app{
+		width: 320px;
+		position: absolute;
+		top: 5%;
+		left: 50%;
+		/*margin-top: -110px;*/
+		margin-left: -160px;
+		border: 3px solid white;
+		border-radius: 10px;
+		background: transparent;
+		box-shadow: -3px 3px 0px 0px rgba(0,0,0,0.3);
+	}
+
+	#weather-app>*{
+		box-shadow: inset -3px 3px 0px 0px rgba(0,0,0,0.3);
+		text-shadow: -3px 3px rgba(0,0,0,0.3);
+		/*border: 2px solid white;*/
 	}
 
 
 		#app-title {
-			color:white;
+    	font-family: 'Signika', sans-serif;
+			color: white;
+			font-size: 2.2em;
+			padding: 10px 10px 0 10px;
+			border-bottom: 3px solid white;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+
+		#weather-info{
+			height: 100px;
+			background: transparent;
+			padding-top: 10px;
+			margin-bottom: 10px;
 		}
 
 		#weather-icon {
-			text-align: right;
-			font-size: 4rem;
+			text-align: center;
+			color: white;
+			font-size: 4.5em;
+			padding-left: 30px;
+			/*border: 2px dashed white;*/
+			
+		}
+
+		#location-info {
+/*		border: 2px dashed white;
+			padding: -2px;*/
+			font-family: 'Open Sans', sans-serif;
+			color: white;
+			text-align: left;
+			font-size: 1.2em;
+			line-height: 1.2em;
 		}
 		
 		#location-info * {
-			text-align: left;
+		}
+
+		#app-footer {
+			font-size: 0.8em;
+			line-height: 0.8em;
+			color: white;
+			border-top: 3px solid white;
+			padding-top: 10px;
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+		}
+
+		#app-footer a {
+			color: white;
+			text-decoration: underline;
 		}
